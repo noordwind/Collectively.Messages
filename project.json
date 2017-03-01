@@ -1,0 +1,17 @@
+﻿{
+  "name": "Collectively.Messages",
+  "authors": ["Noordwind"],
+  "title": "Collectively.Messages",
+  "version": "1.0.0-*",
+  "packOptions": {
+    "licenseUrl": "https://github.com/noordwind/Collectively.Messages/blob/master/LICENSE",
+    "projectUrl": "https://github.com/noordwind/Collectively.Messages",
+    "packageType": "DotnetCliTool"
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.6.1"
+  },
+  "frameworks": {
+    "netstandard1.6": {}
+  }
+}
