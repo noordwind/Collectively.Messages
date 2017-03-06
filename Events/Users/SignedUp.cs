@@ -7,16 +7,19 @@ namespace Collectively.Messages.Events.Users
         public Guid RequestId { get; }
         public Resource Resource { get; }
         public string UserId { get; }
+        public string Provider { get; set; }
 
         protected SignedUp()
         {
         }
 
-        public SignedUp(Guid requestId, Resource resource, string userId)
+        public SignedUp(Guid requestId, Resource resource, 
+            string userId, string provider)
         {
             RequestId = requestId;
             Resource = resource;
             UserId = userId;
+            Provider = provider;
         }
     }
 }
