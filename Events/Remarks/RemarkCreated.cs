@@ -1,50 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using Collectively.Messages.Events.Remarks.Models;
-using Collectively.Messages.Events;
 
 namespace Collectively.Messages.Events.Remarks
 {
-    public class RemarkCreated : IAuthenticatedEvent
+    public class RemarkCreated : IAuthenticatedEvent, IResource
     {
         public Guid RequestId { get; }
-        public Guid RemarkId { get; }
+        public Resource Resource { get; }
         public string UserId { get; }
-        public string Username { get; }
-        public RemarkCategory Category { get; }
-        public RemarkLocation Location { get; }
-        public string Description { get; }
-        public RemarkState State { get; }
-        public IEnumerable<string> Tags { get; set; }
-        public DateTime CreatedAt { get; }
+        public Guid RemarkId { get; }
 
         protected RemarkCreated()
         {
         }
 
-        public RemarkCreated(Guid requestId, Guid remarkId, 
-            string userId, string username,
-            RemarkCategory category, RemarkLocation location,
-            string description, IEnumerable<string> tags, DateTime createdAt)
+        public RemarkCreated(Guid requestId, Resource resource, 
+            string userId, Guid remarkId)
         {
             RequestId = requestId;
-            RemarkId = remarkId;
+            Resource = resource;
             UserId = userId;
-            Username = username;
-            Category = category;
-            Location = location;
-            Description = description;
-            Tags = tags;
-            CreatedAt = createdAt;
-            State = new RemarkState
-            {
-                State = "new",
-                UserId = userId,
-                Username = username,
-                Description = description,
-                Location = location,
-                CreatedAt = createdAt
-            };
+            RemarkId = remarkId;
         }
     }
 }

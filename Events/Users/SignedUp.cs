@@ -1,39 +1,22 @@
 ﻿using System;
-using Collectively.Messages.Events;
 
 namespace Collectively.Messages.Events.Users
 {
-    public class SignedUp : IEvent
+    public class SignedUp : IEvent, IResource
     {
         public Guid RequestId { get; }
+        public Resource Resource { get; }
         public string UserId { get; }
-        public string Email { get; }
-        public string Name { get; }
-        public string PictureUrl { get; }
-        public string Role { get; }
-        public string State { get; }
-        public string Provider { get; }
-        public string ExternalUserId { get; }
-        public DateTime CreatedAt { get; }
 
         protected SignedUp()
         {
         }
 
-        public SignedUp(Guid requestId, string userId, string email, string name,
-            string pictureUrl, string role, string state, string provider,
-            string externalUserId, DateTime createdAt)
+        public SignedUp(Guid requestId, Resource resource, string userId)
         {
             RequestId = requestId;
+            Resource = resource;
             UserId = userId;
-            Email = email;
-            Name = name;
-            PictureUrl = pictureUrl;
-            Role = role;
-            State = state;
-            Provider = provider;
-            ExternalUserId = externalUserId;
-            CreatedAt = createdAt;
         }
     }
 }

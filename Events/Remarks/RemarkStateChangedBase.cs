@@ -1,37 +1,25 @@
 using System;
-using Collectively.Messages.Events.Remarks.Models;
-using Collectively.Messages.Events;
 
 namespace Collectively.Messages.Events.Remarks
 {
-    public abstract class RemarkStateChangedBase : IAuthenticatedEvent
+    public abstract class RemarkStateChangedBase : IAuthenticatedEvent, IResource
     {
         public Guid RequestId { get; }
-        public Guid RemarkId { get; }
+        public Resource Resource { get; }
         public string UserId { get; }
-        public RemarkState State { get; }
+        public Guid RemarkId { get; }
 
         protected RemarkStateChangedBase()
         {
         }
 
-        public RemarkStateChangedBase(Guid requestId, Guid remarkId, 
-            string userId, string username, string state, 
-            string description, RemarkLocation location,
-            DateTime createdAt)
+        public RemarkStateChangedBase(Guid requestId, Resource resource, 
+            string userId, Guid remarkId)
         {
             RequestId = requestId;
-            RemarkId = remarkId;
+            Resource = resource;
             UserId = userId;
-            State = new RemarkState
-            {
-                State = state,
-                UserId = userId,
-                Username = username,
-                Description = description,
-                Location = location,
-                CreatedAt = createdAt
-            };
+            RemarkId = remarkId;
         }
     }
 }

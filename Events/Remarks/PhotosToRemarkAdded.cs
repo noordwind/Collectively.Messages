@@ -1,28 +1,25 @@
 using System;
-using System.Collections.Generic;
-using Collectively.Messages.Events.Remarks.Models;
-using Collectively.Messages.Events;
 
 namespace Collectively.Messages.Events.Remarks
 {
-    public class PhotosToRemarkAdded : IAuthenticatedEvent
+    public class PhotosToRemarkAdded : IAuthenticatedEvent, IResource
     {
         public Guid RequestId { get; }
-        public Guid RemarkId { get; }
+        public Resource Resource { get; }
         public string UserId { get; }
-        public IEnumerable<RemarkFile> Photos { get; }
+        public Guid RemarkId { get; }
 
         protected PhotosToRemarkAdded()
         {
         }
 
-        public PhotosToRemarkAdded(Guid requestId, Guid remarkId, 
-            string userId, IEnumerable<RemarkFile> photos)
+        public PhotosToRemarkAdded(Guid requestId, Resource resource, 
+            string userId, Guid remarkId)
         {
             RequestId = requestId;
-            RemarkId = remarkId;
+            Resource = resource;
             UserId = userId;
-            Photos = photos;
+            RemarkId = remarkId;
         }
     }
 }

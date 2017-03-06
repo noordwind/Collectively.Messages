@@ -1,5 +1,4 @@
 using System;
-using Collectively.Messages.Events;
 
 namespace Collectively.Messages.Events.Remarks
 {
