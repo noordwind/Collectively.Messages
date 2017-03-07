@@ -2,8 +2,8 @@ namespace Collectively.Messages.Events
 {
     public class Resource
     {
-        public string Service { get; protected set; }
-        public string Endpoint { get; protected set; }
+        public string Service { get; set; }
+        public string Endpoint { get; set; }
 
         protected Resource()
         {
