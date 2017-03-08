@@ -2,13 +2,13 @@
 
 namespace Collectively.Messages.Events.Remarks
 {
-    public class RemarkResolved : RemarkStateChangedBase
+    public class RemarkCanceled : RemarkStateChangedBase
     {
-        protected RemarkResolved()
+        protected RemarkCanceled()
         {
         }
 
-        public RemarkResolved(Guid requestId, Resource resource, 
+        public RemarkCanceled(Guid requestId, Resource resource, 
             string userId, Guid remarkId)
             : base(requestId, resource, userId, remarkId)
         {

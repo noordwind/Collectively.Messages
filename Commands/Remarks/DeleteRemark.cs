@@ -1,5 +1,4 @@
 ﻿using System;
-using Collectively.Messages.Commands;
 
 namespace Collectively.Messages.Commands.Remarks
 {
