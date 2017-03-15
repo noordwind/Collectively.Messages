@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Collectively.Messages</AssemblyTitle>
+    <Authors>Noordwind</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>Collectively.Messages</AssemblyName>
+    <PackageId>Collectively.Messages</PackageId>
+    <PackageProjectUrl>https://github.com/noordwind/Collectively.Messages</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/noordwind/Collectively.Messages/blob/master/LICENSE</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+  </PropertyGroup>
+
+</Project>
