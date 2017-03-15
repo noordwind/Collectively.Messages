@@ -2,21 +2,16 @@
 
 namespace Collectively.Messages.Events.Remarks
 {
-    public class RemarkDeleted : IAuthenticatedEvent
+    public class RemarkDeleted : RemarkStateChangedBase
     {
-        public Guid RequestId { get; }
-        public Guid Id { get; }
-        public string UserId { get; }
-
         protected RemarkDeleted()
         {
         }
 
-        public RemarkDeleted(Guid requestId, Guid id, string userId)
+        public RemarkDeleted(Guid requestId, Resource resource, 
+            string userId, Guid remarkId)
+            : base(requestId, resource, userId, remarkId)
         {
-            RequestId = requestId;
-            Id = id;
-            UserId = userId;
         }
     }
 }

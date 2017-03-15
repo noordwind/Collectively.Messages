@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Collectively.Messages.Commands;
 using Collectively.Messages.Commands.Remarks.Models;
 
 namespace Collectively.Messages.Commands.Remarks
