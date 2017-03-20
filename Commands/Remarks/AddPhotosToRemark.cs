@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Collectively.Messages.Commands.Remarks.Models;
+using Collectively.Messages.Commands.Models;
 
 namespace Collectively.Messages.Commands.Remarks
 {
@@ -9,6 +9,6 @@ namespace Collectively.Messages.Commands.Remarks
         public Guid RemarkId { get; set; }
         public Request Request { get; set; }
         public string UserId { get; set; }
-        public IList<RemarkFile> Photos { get; set; }
+        public IList<File> Photos { get; set; }
     }
 }

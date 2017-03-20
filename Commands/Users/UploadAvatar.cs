@@ -1,11 +1,11 @@
-﻿using Collectively.Messages.Commands;
+﻿using Collectively.Messages.Commands.Models;
 
 namespace Collectively.Messages.Commands.Users
 {
-    public class ChangeAvatar : IAuthenticatedCommand
+    public class UploadAvatar : IAuthenticatedCommand
     {
         public Request Request { get; set; }
         public string UserId { get; set; }
-        public string PictureUrl { get; set; }
+        public File Avatar { get; set; }
     }
 }

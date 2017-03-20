@@ -1,6 +1,6 @@
-﻿namespace Collectively.Messages.Commands.Remarks.Models
+﻿namespace Collectively.Messages.Commands.Models
 {
-    public class RemarkFile
+    public class File
     {
         public string Base64 { get; set; }
         public string Name { get; set; }

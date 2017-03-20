@@ -1,6 +1,4 @@
-﻿using Collectively.Messages.Commands;
-
-namespace Collectively.Messages.Commands.Users
+﻿namespace Collectively.Messages.Commands.Users
 {
     public class ChangePassword : IAuthenticatedCommand
     {

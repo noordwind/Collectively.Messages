@@ -1,6 +1,6 @@
 using System;
 
-namespace Collectively.Messages.Commands.Remarks.Models
+namespace Collectively.Messages.Commands.Models
 {
     public class GroupedFile
     {

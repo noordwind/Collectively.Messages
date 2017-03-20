@@ -2,7 +2,7 @@
 
 namespace Collectively.Messages.Events.Users
 {
-    public class ChangeAvatarRejected : IRejectedEvent
+    public class UploadAvatarRejected : IRejectedEvent
     {
         public Guid RequestId { get; }
         public string UserId { get; }
@@ -10,12 +10,12 @@ namespace Collectively.Messages.Events.Users
         public string Reason { get; }
 
 
-        protected ChangeAvatarRejected()
+        protected UploadAvatarRejected()
         {
             
         }
 
-        public ChangeAvatarRejected(Guid requestId, 
+        public UploadAvatarRejected(Guid requestId, 
             string userId, string code, string reason)
         {
             RequestId = requestId;
