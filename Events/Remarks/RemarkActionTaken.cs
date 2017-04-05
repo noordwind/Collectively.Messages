@@ -6,6 +6,7 @@ namespace Collectively.Messages.Events.Remarks
     {
         public Guid RequestId { get; }
         public string UserId { get; }
+        public string Username { get; }
         public Guid RemarkId { get; }
         public string Description { get; }
 
@@ -14,10 +15,11 @@ namespace Collectively.Messages.Events.Remarks
         }
 
         public RemarkActionTaken(Guid requestId, string userId,
-            Guid remarkId, string description)
+            string username, Guid remarkId, string description)
         {
             RequestId = requestId;
             UserId = userId;
+            Username = username;
             RemarkId = remarkId;
             Description = description;
         }
