@@ -6,7 +6,6 @@ namespace Collectively.Messages.Commands.Remarks
     public class CreateRemark : ChangeRemarkStateBase
     {
         public string Category { get; set; }
-        public File Photo { get; set; }
         public IList<string> Tags { get; set; }
         public IList<SocialMedia> SocialMedia { get; set; }
     }

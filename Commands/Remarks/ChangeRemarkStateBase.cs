@@ -1,4 +1,5 @@
 using System;
+using Collectively.Messages.Commands.Models;
 
 namespace Collectively.Messages.Commands.Remarks
 {
@@ -11,5 +12,6 @@ namespace Collectively.Messages.Commands.Remarks
         public double Longitude { get; set; }
         public string Address { get; set; }
         public string Description { get; set; }
+        public File Photo { get; set; }
     }
 }
