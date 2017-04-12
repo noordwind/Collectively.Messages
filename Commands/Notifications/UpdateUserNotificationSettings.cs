@@ -6,6 +6,7 @@ namespace Collectively.Messages.Commands.Notifications
     {
         public Request Request { get; set; }
         public string UserId { get; set; }
+        public string Username { get; set; }
         public string Email { get; set; }
         public string Culture { get; set; }
         public NotificationSettings EmailSettings { get; set; }
