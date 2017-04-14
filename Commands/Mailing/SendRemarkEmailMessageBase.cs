@@ -10,5 +10,6 @@ namespace Collectively.Messages.Commands.Mailing
         public string Username { get; set; }
         public DateTime Date { get; set; }
         public string Culture { get; set; }
+        public string RemarkUrl { get; set; }
     }
 }
