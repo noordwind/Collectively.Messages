@@ -7,19 +7,19 @@ namespace Collectively.Messages.Events.Remarks
         public Guid RequestId { get; }
         public string UserId { get; }
         public Guid RemarkId { get; }
-        public Guid CommentId { get; }
+        public Guid StateId { get; }
 
         protected RemarkStateDeleted()
         {
         }
 
         public RemarkStateDeleted(Guid requestId, 
-            string userId, Guid remarkId, Guid commentId)
+            string userId, Guid remarkId, Guid stateId)
         {
             RequestId = requestId;
             UserId = userId;
             RemarkId = remarkId;
-            CommentId = commentId;
+            StateId = stateId;
         }
     }
 }
