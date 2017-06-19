@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 
 namespace Collectively.Messages.Commands.Remarks
 {
@@ -10,6 +9,6 @@ namespace Collectively.Messages.Commands.Remarks
         public string Title { get; set; }
         public string Description { get; set; }
         public IEnumerable<string> Tags { get; set; }
-        public Stream File { get; set; }
+        public string FileBase64 { get; set; }
     }
 }
