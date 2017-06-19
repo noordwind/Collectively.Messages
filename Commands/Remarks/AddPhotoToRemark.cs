@@ -8,7 +8,7 @@ namespace Collectively.Messages.Commands.Remarks
         public string UserId { get; set; }
         public Guid RemarkId { get; set; }
         public string Name { get; set; }
-        public string FileBase64 { get; set; }
         public string ContentType { get; set; }
+        public string FileBase64 { get; set; }
     }
 }
