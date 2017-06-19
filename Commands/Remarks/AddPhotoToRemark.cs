@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Collectively.Messages.Commands.Remarks
 {
-    public class AddPhotoToRemark : IAuthenticatedCommand, IFileUploadCommand
+    public class AddPhotoToRemark : IFileUploadCommand
     {
         public Request Request { get; set; }
         public string UserId { get; set; }
