@@ -9,7 +9,7 @@ branches:
     - develop
 before_script:
   - chmod a+x ./scripts/travis-build.sh
-  - chmod a+x ./scripts/tafter-success.sh
+  - chmod a+x ./scripts/after-success.sh
 script:
   - ./scripts/travis-build.sh
 after_success:
