@@ -11,7 +11,7 @@ before_script:
   - chmod a+x ./scripts/travis-build.sh
   - chmod a+x ./scripts/tafter-success.sh
 script:
-  - ./scripts/ttravis-build.sh
+  - ./scripts/travis-build.sh
 after_success:
   - ./scripts/after-success.sh 
 notifications:
