@@ -13,7 +13,7 @@ before_script:
 script:
   - ./scripts/ttravis-build.sh
 after_success:
-  - ./scripts/tafter-success.sh 
+  - ./scripts/after-success.sh 
 notifications:
   email:
     on_success: never
