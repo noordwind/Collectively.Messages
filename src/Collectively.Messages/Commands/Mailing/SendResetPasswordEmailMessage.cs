@@ -1,8 +1,7 @@
 ﻿namespace Collectively.Messages.Commands.Mailing
 {
-    public class SendResetPasswordEmailMessage : SendEmailMessageBase
+    public class SendResetPasswordEmailMessage : SendSecuredEmailMessageBase
     {
-        public string Token { get; set; }
-        public string Endpoint { get; set; }
+        
     }
 }
