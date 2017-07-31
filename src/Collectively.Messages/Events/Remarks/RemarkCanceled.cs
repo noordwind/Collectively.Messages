@@ -9,8 +9,8 @@ namespace Collectively.Messages.Events.Remarks
         }
 
         public RemarkCanceled(Guid requestId, Resource resource, 
-            string userId, Guid remarkId)
-            : base(requestId, resource, userId, remarkId)
+            string userId, Guid remarkId, Guid? groupId = null)
+            : base(requestId, resource, userId, remarkId, groupId)
         {
         }
     }
