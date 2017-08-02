@@ -12,5 +12,6 @@ namespace Collectively.Messages.Commands.Groups
         public string Name { get; set; }
         public bool IsPublic { get; set; }
         public IDictionary<string,string> Criteria { get; set; }
+        public IList<string> Locations { get; set; }
     }
 }
