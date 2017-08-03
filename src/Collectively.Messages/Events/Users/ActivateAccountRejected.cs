@@ -8,6 +8,7 @@ namespace Collectively.Messages.Events.Users
         public string UserId { get; }
         public string Reason { get; }
         public string Code { get; }
+        public string Email { get; }
 
         protected ActivateAccountRejected()
         {
@@ -15,9 +16,10 @@ namespace Collectively.Messages.Events.Users
         }
 
         public ActivateAccountRejected(Guid requestId,
-            string userId, string code, string reason)
+            string email, string code, string reason, string userId = "")
         {
             RequestId = requestId;
+            Email = email;
             UserId = userId;
             Code = code;
             Reason = reason;
