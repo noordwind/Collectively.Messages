@@ -2,7 +2,7 @@
 
 namespace Collectively.Messages.Events.Users
 {
-    public class ChangePasswordRejected: IRejectedEvent
+    public class ChangePasswordRejected : IRejectedEvent
     {
         public Guid RequestId { get; }
         public string UserId { get; }
