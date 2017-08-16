@@ -5,7 +5,6 @@ namespace Collectively.Messages.Events.Groups
     public class MemberAddedToOrganization : IAuthenticatedEvent
     {
         public Guid RequestId { get; }
-        public Resource Resource { get; }
         public string UserId { get; }
         public Guid OrganizationId { get; }
         public string MemberId { get; }
@@ -15,11 +14,10 @@ namespace Collectively.Messages.Events.Groups
         {
         }
 
-        public MemberAddedToOrganization(Guid requestId, Resource resource,
-            string userId, Guid organizationId, string memberId, string role)
+        public MemberAddedToOrganization(Guid requestId, string userId, 
+            Guid organizationId, string memberId, string role)
         {
             RequestId = requestId;
-            Resource = resource;
             UserId = userId;
             OrganizationId = organizationId;
             MemberId = memberId;

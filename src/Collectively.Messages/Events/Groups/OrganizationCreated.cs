@@ -2,7 +2,7 @@ using System;
 
 namespace Collectively.Messages.Events.Groups
 {
-    public class OrganizationCreated : IAuthenticatedEvent
+    public class OrganizationCreated : IAuthenticatedEvent, IResource
     {
         public Guid RequestId { get; }
         public Resource Resource { get; }
