@@ -3,12 +3,12 @@
   <PropertyGroup>
     <AssemblyTitle>Collectively.Messages</AssemblyTitle>
     <Authors>Noordwind</Authors>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Collectively.Messages</AssemblyName>
     <PackageId>Collectively.Messages</PackageId>
     <PackageProjectUrl>https://github.com/noordwind/Collectively.Messages</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/noordwind/Collectively.Messages/blob/master/LICENSE</PackageLicenseUrl>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <NetStandardImplicitPackageVersion>2.0.0</NetStandardImplicitPackageVersion>
   </PropertyGroup>
 
 </Project>
