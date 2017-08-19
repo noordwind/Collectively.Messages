@@ -9,6 +9,6 @@ case "$TRAVIS_BRANCH" in
     ;;
   "develop")
     echo Triggering MyGet package build using branch $TRAVIS_BRANCH
-    dotnet nuget push *.nupkg -k $MYGET_DEV_API_KEY -s https://www.myget.org/F/collectively-dev/api/v2
+    dotnet nuget push *.nupkg -k $MYGET_DEV_API_KEY -s https://www.myget.org/F/collectively-dev/api/v2/package
     ;;    
 esac
