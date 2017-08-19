@@ -5,7 +5,7 @@ echo Triggering MyGet package build
 cd src/Collectively.Messages
 dotnet pack /p:PackageVersion=2.0.$TRAVIS_BUILD_NUMBER --no-restore -o .
 
-echo Uploading MyGet package using on branch $TRAVIS_BRANCH
+echo Uploading Collectively.Messages package to MyGet using branch $TRAVIS_BRANCH
 
 case "$TRAVIS_BRANCH" in
   "master")
