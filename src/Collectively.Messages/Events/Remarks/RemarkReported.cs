@@ -15,7 +15,7 @@ namespace Collectively.Messages.Events.Remarks
         }
 
         public RemarkReported(Guid requestId, string userId, Guid remarkId,
-            Guid? resourceId, string type, DateTime createdAt)
+            Guid? resourceId, string type)
         {
             RequestId = requestId;
             UserId = userId;
