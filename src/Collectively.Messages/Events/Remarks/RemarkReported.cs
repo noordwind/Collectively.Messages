@@ -7,23 +7,21 @@ namespace Collectively.Messages.Events.Remarks
         public Guid RequestId { get; }
         public string UserId { get; }
         public Guid RemarkId { get; }
-        public Guid ResourceId { get; }
+        public Guid? ResourceId { get; }
         public string Type { get; set; }  
-        public DateTime CreatedAt { get; }
 
         protected RemarkReported()
         {
         }
 
         public RemarkReported(Guid requestId, string userId, Guid remarkId,
-            Guid resourceId, string type, DateTime createdAt)
+            Guid? resourceId, string type, DateTime createdAt)
         {
             RequestId = requestId;
             UserId = userId;
             RemarkId = remarkId;
             ResourceId = resourceId;
             Type = type;
-            CreatedAt = createdAt;            
         }
     }
 }

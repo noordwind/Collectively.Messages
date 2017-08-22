@@ -7,7 +7,7 @@ namespace Collectively.Messages.Events.Remarks
         public Guid RequestId { get; }
         public string UserId { get; }
         public Guid RemarkId { get; }
-        public Guid ResourceId { get; }
+        public Guid? ResourceId { get; }
         public string Type { get; }
         public string Code { get; }
         public string Reason { get; }
@@ -17,7 +17,7 @@ namespace Collectively.Messages.Events.Remarks
         }
 
         public ReportRemarkRejected(Guid requestId, 
-            string userId, Guid remarkId, Guid resourceId, 
+            string userId, Guid remarkId, Guid? resourceId, 
             string type, string code, string reason)
         {
             RequestId = requestId;
