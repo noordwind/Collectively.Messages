@@ -11,7 +11,7 @@ namespace Collectively.Messages.Commands.Groups
         public Guid? OrganizationId { get; set; }
         public string Name { get; set; }
         public bool IsPublic { get; set; }
-        public IEnumerable<string> Tags { get; set; }
+        public IEnumerable<Guid> Tags { get; set; }
         public IDictionary<string,ISet<string>> Criteria { get; set; }
     }
 }
