@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Collectively.Messages.Events.Models;
 
 namespace Collectively.Messages.Events.Remarks
@@ -8,9 +9,9 @@ namespace Collectively.Messages.Events.Remarks
     {
         public Guid RequestId { get; }
         public string UserId { get; }
-        public IEnumerable<Tag> Tags { get; }
+        public ICollection<Tag> Tags { get; }
 
-        protected TagsCreated()
+        protected TagsCreated() 
         {
         }
 
@@ -19,7 +20,7 @@ namespace Collectively.Messages.Events.Remarks
         {
             RequestId = requestId;
             UserId = userId;
-            Tags = tags;
+            Tags = tags.ToList();
         }
     }
 }

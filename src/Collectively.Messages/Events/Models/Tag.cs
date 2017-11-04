@@ -7,6 +7,6 @@ namespace Collectively.Messages.Events.Models
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public IEnumerable<TranslatedTag> Translations { get; set; }
+        public ICollection<TranslatedTag> Translations { get; set; }
     }
 }
