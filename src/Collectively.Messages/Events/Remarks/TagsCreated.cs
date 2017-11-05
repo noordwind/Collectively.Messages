@@ -9,10 +9,16 @@ namespace Collectively.Messages.Events.Remarks
     {
         public Guid RequestId { get; }
         public string UserId { get; }
-        public ICollection<Tag> Tags { get; }
+        public IEnumerable<Tag> Tags { get; }
 
         protected TagsCreated() 
         {
+            Tags = Enumerable.Empty<Tag>();
+        }
+
+        protected TagsCreated(IEnumerable<Tag> tags) 
+        {
+            Tags = tags;
         }
 
         public TagsCreated(Guid requestId, string userId,
